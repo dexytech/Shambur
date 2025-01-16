@@ -6,13 +6,6 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס מוחלט של כל הרווחים */
-        * {
-            margin: 0 !important;
-            padding: 0 !important;
-            box-sizing: border-box;
-        }
-
         body {
             direction: rtl;
             text-align: right;
@@ -22,7 +15,7 @@
 
         header {
             text-align: center;
-            padding: 1rem 0; /* שמירה על מעט ריווח עבור הכותרת */
+            padding: 2rem 0; /* שמירה על הריווח של הכותרת */
         }
 
         header h1 {
@@ -31,7 +24,6 @@
         }
 
         header p {
-            margin-top: 0.5rem;
             font-size: 1rem;
         }
 
@@ -45,7 +37,7 @@
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 0; /* ביטול מוחלט של הרווח מעל ומתחת */
+            margin-top: 0 !important; /* ביטול הרווח מעל התיבה */
         }
 
         h2 {
@@ -54,14 +46,9 @@
             margin-bottom: 0.5rem;
         }
 
-        section {
-            margin-top: 0; /* ביטול מוחלט של הרווח */
-        }
-
         .links ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
 
         .links ul li {
