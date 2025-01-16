@@ -6,13 +6,7 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס רווחים גלובלי */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* סגנונות גלובליים */
         body {
             direction: rtl;
             text-align: right;
@@ -22,23 +16,23 @@
 
         header {
             text-align: center;
-            padding: 0.5rem 0; /* רווח קטן יותר בכותרת */
+            padding: 1.5rem 0; /* רווח מתון לכותרת */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0; /* ביטול רווחים נוספים */
-            line-height: 1.2; /* צפיפות אנכית */
+            margin: 0;
         }
 
         header p {
-            margin: 0.2rem 0; /* ביטול רווחים גדולים */
+            margin: 0.5rem 0 0; /* רווח קל מתחת לכותרת המשנית */
             font-size: 1rem;
         }
 
         main {
-            margin-top: 1rem; /* רווח מדויק */
+            margin: 2rem auto; /* ריווח כללי סביב כל האלמנטים */
+            max-width: 700px; /* הגבלת רוחב */
             padding: 1rem;
         }
 
@@ -46,22 +40,23 @@
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 0.5rem 0;
+            margin-bottom: 2rem;
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
-            margin: 0.5rem 0; /* התאמת רווחים */
+            margin-bottom: 1rem;
         }
 
         section {
-            margin-top: 1rem; /* רווח מעל אזורים חדשים */
+            margin-top: 2rem;
         }
 
         .links ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         .links ul li {
