@@ -6,7 +6,7 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* הסרת כל המרווחים ברירת מחדל */
+        /* איפוס כללי */
         * {
             margin: 0;
             padding: 0;
@@ -22,22 +22,24 @@
 
         header {
             text-align: center;
-            padding: 0.5rem 0; /* מרווח פנימי קטן */
+            padding: 0.5rem 0; /* מרווח פנימי מינימלי */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0; /* אין רווח חיצוני */
-            line-height: 1.2; /* התאמה בין שורות */
+            margin: 0; /* ביטול רווח חיצוני */
+            line-height: 1.1; /* התאמת ריווח בין השורות */
         }
 
         header p {
-            margin: 0.2rem 0; /* רווח קטן בין הפסקה לכותרת */
+            margin: 0.2rem 0; /* רווח קטן בין הכותרת לפסקה */
+            padding: 0; /* אין רווח פנימי */
+            font-size: 1rem;
         }
 
         main {
-            margin-top: 0.5rem; /* רווח קטן אחרי הכותרת */
+            margin-top: 0.3rem; /* צמצום הרווח בין header לתוכן */
             padding: 1rem;
         }
 
@@ -45,17 +47,17 @@
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 1rem 0; /* רווחים מדויקים מעל ומתחת */
+            margin: 0.5rem 0; /* רווחים קטנים מעל ומתחת */
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
-            margin-bottom: 0.5rem; /* רווח מדויק מתחת לכותרת */
+            margin: 0.5rem 0; /* רווח מינימלי מסביב לכותרת */
         }
 
         section {
-            margin-top: 1rem; /* רווח מדויק בין המקטעים */
+            margin-top: 0.8rem; /* רווחים קטנים בין מקטעים */
         }
 
         .links ul {
