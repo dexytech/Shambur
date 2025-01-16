@@ -6,69 +6,69 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס חזק של כל הרווחים */
+        /* איפוס כללי */
         * {
-            margin: 0 !important;
-            padding: 0 !important;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
+        /* עיצוב כללי */
         body {
             direction: rtl;
             text-align: right;
             background-color: #E5E5E5;
             color: #0A3D62;
+            font-family: Arial, sans-serif;
         }
 
         header {
             text-align: center;
-            padding: 0 !important;
-            margin: 0 !important;
+            padding: 1.5rem 0; /* ריווח נעים למעלה ולמטה */
         }
 
         header h1 {
             color: #052E4E;
-            font-size: 2rem;
-            margin: 0 !important;
-            line-height: 1.1;
-            padding: 0 !important;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem; /* רווח מתחת לכותרת */
         }
 
         header p {
-            margin: 0 !important;
-            padding: 0 !important;
-            font-size: 1rem;
+            margin: 0;
+            font-size: 1.2rem;
+            color: #666;
         }
 
         main {
-            margin-top: 0 !important; /* ביטול רווח בין header ל-main */
+            margin: 2rem auto; /* ריווח מעל ומתחת ל-main */
             padding: 1rem;
+            max-width: 800px; /* כדי למקד את התוכן */
         }
 
         .highlight {
             background-color: #FFFAE6;
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 5px;
-            margin: 0.5rem 0 !important;
+            margin-bottom: 2rem; /* ריווח ברור אחרי */
         }
 
         h2 {
             color: #052E4E;
-            font-size: 1.5rem;
-            margin: 0 !important;
+            font-size: 1.8rem;
+            margin-bottom: 1rem; /* ריווח מתחת לכותרת */
         }
 
         section {
-            margin-top: 0.8rem !important;
+            margin-top: 2rem;
         }
 
         .links ul {
             list-style-type: none;
-            padding: 0 !important;
+            padding: 0;
         }
 
         .links ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem; /* ריווח בין הקישורים */
         }
 
         .links ul li a {
@@ -88,10 +88,18 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            margin-top: 2rem; /* ריווח מעל הכפתור */
         }
 
         .btn:hover {
             background-color: #205437;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem; /* ריווח מעל הפוטר */
+            padding: 1rem 0;
+            color: #666;
         }
     </style>
 </head>
@@ -125,7 +133,7 @@
         </section>
 
     </main>
-    <footer class="container">
+    <footer>
         <p>כל הזכויות שמורות &copy; 2025 - שמבור</p>
     </footer>
 </body>
