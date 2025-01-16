@@ -6,7 +6,7 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס חזק */
+        /* איפוס */
         * {
             margin: 0;
             padding: 0;
@@ -28,7 +28,7 @@
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0 0 0.5rem 0;
+            margin-bottom: 0.5rem;
         }
 
         header p {
@@ -37,10 +37,11 @@
         }
 
         main {
+            width: calc(100% - 2rem); /* קיזוז רוחב */
             margin: 0 auto;
-            padding: 1rem 2rem 1rem 1rem; /* ריווח מימין: 2rem */
-            max-width: 800px;
-            background-color: #ffffff; /* להבליט את התוכן */
+            padding: 1rem 1.5rem; /* ריווח פנימי */
+            border: 1px solid red; /* מסגרת לבדיקה */
+            background-color: #ffffff;
         }
 
         .highlight {
