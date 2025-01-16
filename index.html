@@ -22,26 +22,26 @@
 
         header {
             text-align: center;
-            padding: 0.5rem 0;
+            padding: 0.5rem 0; /* רווח פנימי */
+            margin-bottom: 0; /* ביטול רווח תחתון */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin-bottom: 0.5rem;
+            margin: 0 0 0.5rem 0; /* רווח קטן מתחת לכותרת */
         }
 
         header p {
-            margin: 0;
+            margin: 0; /* ביטול רווחים מיותרים */
             font-size: 1rem;
         }
 
         main {
-            width: calc(100% - 2rem); /* קיזוז רוחב */
-            margin: 0 auto;
-            padding: 1rem 1.5rem; /* ריווח פנימי */
+            margin-top: 0.5rem; /* רווח קטן בין header ל-main */
+            padding: 1rem 2rem; /* רווח פנימי ברור */
+            background-color: #ffffff; /* צבע רקע */
             border: 1px solid red; /* מסגרת לבדיקה */
-            background-color: #ffffff;
         }
 
         .highlight {
