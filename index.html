@@ -6,7 +6,7 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס כללי */
+        /* איפוס רווחים גלובלי */
         * {
             margin: 0;
             padding: 0;
@@ -22,39 +22,41 @@
 
         header {
             text-align: center;
-            padding: 0.5rem 0; /* ריווח פנימי */
-            margin-bottom: 0.25rem; /* רווח תחתון קטן */
+            padding: 0.5rem 0; /* רווח קטן יותר בכותרת */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0 0 0.25rem 0; /* רווח קטן בלבד מתחת לכותרת */
+            margin: 0; /* ביטול רווחים נוספים */
+            line-height: 1.2; /* צפיפות אנכית */
         }
 
         header p {
-            margin: 0; /* אין רווח מיותר */
+            margin: 0.2rem 0; /* ביטול רווחים גדולים */
             font-size: 1rem;
         }
 
         main {
-            margin-top: 0; /* ביטול רווח בין header ל-main */
-            padding: 1rem 1.5rem; /* ריווח פנימי בתוך המסגרת */
-            background-color: #ffffff;
-            border: 1px solid red; /* מסגרת לבדיקה */
+            margin-top: 1rem; /* רווח מדויק */
+            padding: 1rem;
         }
 
         .highlight {
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 1rem 0;
+            margin: 0.5rem 0;
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin: 0.5rem 0; /* התאמת רווחים */
+        }
+
+        section {
+            margin-top: 1rem; /* רווח מעל אזורים חדשים */
         }
 
         .links ul {
