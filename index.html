@@ -6,17 +6,18 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* סגנונות גלובליים */
         body {
             direction: rtl;
             text-align: right;
             background-color: #E5E5E5;
             color: #0A3D62;
+            margin: 0; /* איפוס כללי */
         }
 
         header {
             text-align: center;
-            padding: 1.5rem 0; /* רווח מתון לכותרת */
+            padding: 2rem 0; /* הגדלת רווח מעל ומתחת לכותרת */
+            margin-bottom: 1.5rem; /* מרחק מתחת ל-header */
         }
 
         header h1 {
@@ -26,31 +27,31 @@
         }
 
         header p {
-            margin: 0.5rem 0 0; /* רווח קל מתחת לכותרת המשנית */
-            font-size: 1rem;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
         }
 
         main {
-            margin: 2rem auto; /* ריווח כללי סביב כל האלמנטים */
-            max-width: 700px; /* הגבלת רוחב */
-            padding: 1rem;
+            margin: 0 auto;
+            padding: 1.5rem;
+            max-width: 800px; /* מרכז רוחב הטקסט */
         }
 
         .highlight {
             background-color: #FFFAE6;
-            padding: 1rem;
-            border-radius: 5px;
-            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem; /* ריווח מתחת ל-"מה חדש?" */
         }
 
         h2 {
             color: #052E4E;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 1rem;
         }
 
         section {
-            margin-top: 2rem;
+            margin-top: 2rem; /* ריווח כללי בין סקשנים */
         }
 
         .links ul {
@@ -60,7 +61,7 @@
         }
 
         .links ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .links ul li a {
