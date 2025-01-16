@@ -15,22 +15,26 @@
 
         header {
             text-align: center;
-            padding: 1rem 0; /* צמצום רווחים למעלה ולמטה */
-            margin-bottom: 0; /* ביטול רווח נוסף מתחת ל-header */
+            padding: 0; /* ביטול כל הרווחים הפנימיים */
+            margin: 0; /* ביטול כל הרווחים החיצוניים */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0; /* ביטול כל הרווחים מסביב לכותרת */
+            margin: 0; /* אין רווח מעל או מתחת לכותרת */
+            padding: 0; /* ביטול רווח פנימי */
+            line-height: 1.2; /* התאמת המרווח בין השורות בכותרת */
         }
 
         header p {
-            margin: 0.2rem 0; /* צמצום הרווח מתחת לפסקה */
+            margin: 0.2rem 0 0.5rem; /* צמצום מוחלט של רווחים מסביב לפסקה */
+            padding: 0; /* אין רווח פנימי */
+            font-size: 1rem; /* התאמת גודל הטקסט */
         }
 
         main {
-            margin-top: 0.5rem; /* צמצום הרווח בין header לתוכן */
+            margin-top: 0.5rem; /* צמצום הרווח מעל התוכן */
             padding: 1rem;
         }
 
