@@ -6,14 +6,13 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס מלא של כל רווחים */
+        /* איפוס כללי */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* עיצוב ראשי */
         body {
             direction: rtl;
             text-align: right;
@@ -23,24 +22,26 @@
 
         header {
             text-align: center;
-            padding: 0.2rem 0; /* ריווח קטן מאוד */
+            padding: 0; /* ביטול ריווח פנימי */
+            margin: 0; /* ביטול ריווח חיצוני */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0; /* אין רווח חיצוני */
-            line-height: 1.1; /* מרחק מינימלי בין השורות */
+            margin: 0; /* ביטול רווחים */
+            line-height: 1.2;
+            padding: 0;
         }
 
         header p {
-            margin: 0.1rem 0; /* ריווח קטן בין הכותרת לפסקה */
-            padding: 0;
+            margin: 0; /* אין רווחים חיצוניים */
+            padding: 0; /* אין רווחים פנימיים */
             font-size: 1rem;
         }
 
         main {
-            margin-top: 0.2rem; /* רווח מינימלי אחרי header */
+            margin-top: 0.2rem; /* ריווח מינימלי */
             padding: 1rem;
         }
 
@@ -48,13 +49,13 @@
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 0.5rem 0; /* רווחים קטנים מעל ומתחת */
+            margin: 0.5rem 0; /* ריווח קטן בין מקטעים */
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
-            margin: 0; /* ביטול רווח חיצוני */
+            margin: 0; /* ביטול ריווח חיצוני */
         }
 
         section {
