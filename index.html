@@ -22,13 +22,14 @@
 
         header {
             text-align: center;
-            padding: 1rem 0;
+            padding: 0.5rem 0; /* הקטנת רווחים */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
             line-height: 1.2;
+            margin-bottom: 0.5rem; /* הקטנת רווח מתחת לכותרת */
         }
 
         header p {
@@ -39,12 +40,11 @@
             padding: 1rem;
         }
 
-        /* ביטול רווח מעל תיבת "מה חדש" */
         .highlight {
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin-top: 0 !important; /* ביטול מוחלט של רווח חיצוני מעל */
+            margin-top: 0.5rem; /* הקטנת רווח חיצוני */
         }
 
         h2 {
@@ -53,7 +53,7 @@
         }
 
         section {
-            margin-top: 1rem;
+            margin-top: 0.5rem; /* הקטנת הרווח בין הסעיפים */
         }
 
         .links ul {
@@ -86,6 +86,11 @@
 
         .btn:hover {
             background-color: #205437;
+        }
+
+        footer {
+            margin-top: 1rem; /* הקטנת רווח לפני הפוטר */
+            text-align: center;
         }
     </style>
 </head>
