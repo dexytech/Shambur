@@ -6,10 +6,10 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        /* איפוס כללי */
+        /* איפוס חזק של כל הרווחים */
         * {
-            margin: 0;
-            padding: 0;
+            margin: 0 !important;
+            padding: 0 !important;
             box-sizing: border-box;
         }
 
@@ -22,26 +22,26 @@
 
         header {
             text-align: center;
-            padding: 0; /* ביטול ריווח פנימי */
-            margin: 0; /* ביטול ריווח חיצוני */
+            padding: 0 !important;
+            margin: 0 !important;
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0; /* ביטול רווחים */
-            line-height: 1.2;
-            padding: 0;
+            margin: 0 !important;
+            line-height: 1.1;
+            padding: 0 !important;
         }
 
         header p {
-            margin: 0; /* אין רווחים חיצוניים */
-            padding: 0; /* אין רווחים פנימיים */
+            margin: 0 !important;
+            padding: 0 !important;
             font-size: 1rem;
         }
 
         main {
-            margin-top: 0.2rem; /* ריווח מינימלי */
+            margin-top: 0 !important; /* ביטול רווח בין header ל-main */
             padding: 1rem;
         }
 
@@ -49,22 +49,22 @@
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 0.5rem 0; /* ריווח קטן בין מקטעים */
+            margin: 0.5rem 0 !important;
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
-            margin: 0; /* ביטול ריווח חיצוני */
+            margin: 0 !important;
         }
 
         section {
-            margin-top: 0.8rem; /* ריווח מדויק בין מקטעים */
+            margin-top: 0.8rem !important;
         }
 
         .links ul {
             list-style-type: none;
-            padding: 0;
+            padding: 0 !important;
         }
 
         .links ul li {
