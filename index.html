@@ -6,17 +6,93 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        * {margin: 0; padding: 0; box-sizing: border-box;}
-        body {direction: rtl; text-align: right; background-color: #E5E5E5; color: #0A3D62; line-height: 1;}
-        header {text-align: center;}
-        header h1 {color: #052E4E; font-size: 1.5rem;}
-        header p {font-size: 1.5rem;}
-        main {padding: 0rem;}
-        .highlight {background-color: #FFFAE6; padding: 0.5rem; border-radius: 1px;}
-        h2 {color: #052E4E; font-size: 1.2rem;}
-        .links ul {list-style-type: none;}
-        .links ul li a {color: #2C6E49; text-decoration: underline;}
-        .btn {display: inline-block; padding: 0.5rem 1rem; background-color: #2C6E49; color: white; text-decoration: none; font-weight: bold; border-radius: 5px;}
+        /* איפוס חזק של כל הרווחים */
+        * {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            text-align: right;
+            background-color: #E5E5E5;
+            color: #0A3D62;
+        }
+
+        header {
+            text-align: center;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        header h1 {
+            color: #052E4E;
+            font-size: 2rem;
+            margin: 0 !important;
+            line-height: 1.1;
+            padding: 0 !important;
+        }
+
+        header p {
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 1rem;
+        }
+
+        main {
+            margin-top: 0 !important; /* ביטול רווח בין header ל-main */
+            padding: 1rem;
+        }
+
+        .highlight {
+            background-color: #FFFAE6;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 0.5rem 0 !important;
+        }
+
+        h2 {
+            color: #052E4E;
+            font-size: 1.5rem;
+            margin: 0 !important;
+        }
+
+        section {
+            margin-top: 0.8rem !important;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0 !important;
+        }
+
+        .links ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .links ul li a {
+            color: #2C6E49;
+            text-decoration: underline;
+        }
+
+        .links ul li a:hover {
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #2C6E49;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #205437;
+        }
     </style>
 </head>
 <body>
@@ -25,11 +101,15 @@
         <p>תוכניות בניה ודרכי פעולה</p>
     </header>
     <main class="container">
+
+        <!-- אזור "מה חדש?" -->
         <section class="highlight">
             <h2>מה חדש?</h2>
             <p>עדכון: תוכנית חפ-2666 נמצאת בדיון ותוצאות הדיון צפויות להתפרסם בקרוב.</p>
             <p>שימו לב: פורסמה מדיניות עירונית חדשה לתכנון שטחים פתוחים.</p>
         </section>
+
+        <!-- אזור "לינקים חשובים" -->
         <section class="links">
             <h2>לינקים חשובים</h2>
             <ul>
@@ -38,9 +118,12 @@
                 <li><a href="https://example.com/link3" target="_blank">מידע על תמ"א 38</a></li>
             </ul>
         </section>
+
+        <!-- כפתור למסמכים פורמליים -->
         <section>
             <a class="btn" href="planning.html">לחץ כאן למסמכים פורמליים</a>
         </section>
+
     </main>
     <footer class="container">
         <p>כל הזכויות שמורות &copy; 2025 - שמבור</p>
