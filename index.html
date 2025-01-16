@@ -6,6 +6,13 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
+        /* איפוס כולל */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             direction: rtl;
             text-align: right;
@@ -15,24 +22,38 @@
 
         header {
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 1rem 0;
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
+            line-height: 1.2;
         }
 
+        header p {
+            font-size: 1rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        /* ביטול רווח מעל תיבת "מה חדש" */
         .highlight {
             background-color: #FFFAE6;
             padding: 1rem;
             border-radius: 5px;
-            margin: 0 !important; /* ביטול הרווח מעל ומסביב */
+            margin-top: 0 !important; /* ביטול מוחלט של רווח חיצוני מעל */
         }
 
         h2 {
             color: #052E4E;
             font-size: 1.5rem;
+        }
+
+        section {
+            margin-top: 1rem;
         }
 
         .links ul {
