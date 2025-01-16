@@ -6,52 +6,56 @@
     <title>אתר שמבור - דף ראשי</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
+        /* איפוס מוחלט של כל הרווחים */
+        * {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box;
+        }
+
         body {
             direction: rtl;
             text-align: right;
             background-color: #E5E5E5;
             color: #0A3D62;
-            margin: 0; /* איפוס כללי */
         }
 
         header {
             text-align: center;
-            padding: 2rem 0; /* הגדלת רווח מעל ומתחת לכותרת */
-            margin-bottom: 1.5rem; /* מרחק מתחת ל-header */
+            padding: 1rem 0; /* שמירה על מעט ריווח עבור הכותרת */
         }
 
         header h1 {
             color: #052E4E;
             font-size: 2rem;
-            margin: 0;
         }
 
         header p {
             margin-top: 0.5rem;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         main {
             margin: 0 auto;
-            padding: 1.5rem;
-            max-width: 800px; /* מרכז רוחב הטקסט */
+            padding: 1rem;
+            max-width: 700px;
         }
 
         .highlight {
             background-color: #FFFAE6;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem; /* ריווח מתחת ל-"מה חדש?" */
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 0; /* ביטול מוחלט של הרווח מעל ומתחת */
         }
 
         h2 {
             color: #052E4E;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
         section {
-            margin-top: 2rem; /* ריווח כללי בין סקשנים */
+            margin-top: 0; /* ביטול מוחלט של הרווח */
         }
 
         .links ul {
@@ -61,7 +65,7 @@
         }
 
         .links ul li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
         }
 
         .links ul li a {
@@ -81,6 +85,7 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            margin-top: 1.5rem; /* מעט ריווח לכפתור */
         }
 
         .btn:hover {
