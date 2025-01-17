@@ -8,8 +8,8 @@
     <style>
         /* Reset and basic styles */
         * {
-            margin: 0.1!important;
-            padding: 0!important;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -19,46 +19,52 @@
             background-color: #E5E5E5;
             color: #0A3D62;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
+            padding: 1rem;
         }
 
         header {
             text-align: center;
-            padding: 2rem 0;
+            padding: 4rem 1rem;
             background-color: #f5f5f5;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: #052E4E;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         main {
-            padding: 2rem 1.5rem;
+            padding: 4rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .highlight {
             background-color: #FFFAE6;
-            padding: 1.5rem;
-            border-radius: 5px;
-            margin-top: 2rem;
+            padding: 2.5rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .highlight h2 {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
         }
 
         .highlight p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
         }
 
         .links {
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
 
         .links ul {
@@ -67,28 +73,31 @@
         }
 
         .links ul li {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .links ul li a {
             color: #2C6E49;
             text-decoration: underline;
+            font-size: 1.2rem;
         }
 
         .links ul li a:hover {
             text-decoration: none;
+            color: #205437;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.75rem 1.5rem;
+            margin-top: 3rem;
+            padding: 1rem 2rem;
             background-color: #2C6E49;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
             text-align: center;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
@@ -96,15 +105,16 @@
         }
 
         footer {
-            margin-top: 3rem;
+            margin-top: 4rem;
             text-align: center;
-            padding: 1.5rem 0;
+            padding: 3rem 0;
             border-top: 1px solid #ccc;
             background-color: #f5f5f5;
         }
 
         footer p {
-            font-size: 0.9rem;
+            font-size: 1rem;
+            margin: 0;
         }
     </style>
 </head>
