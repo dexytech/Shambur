@@ -3,49 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>אתר שמבור - דף ראשי</title>
+    <title>פורטל מידע</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
         body {
             direction: rtl;
             text-align: right;
-            background-color: #F8F9FA; /* Light, neutral background */
-            color: #343A40; /* Dark gray text */
+            background-color: #F8F9FA; /* רקע עדין */
+            color: #343A40; /* טקסט אפור כהה */
             font-family: "Segoe UI", Arial, sans-serif;
         }
 
         header {
             text-align: center;
-            padding: 1.5rem 0;
-            background-color: #6C757D; /* Muted dark gray */
-            color: #FFFFFF; /* White text */
+            padding: 2rem 0;
+            background-color: #0A3D62; /* כחול כהה */
+            color: white;
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
         main {
             padding: 1.5rem;
         }
 
-        .highlight {
-            background-color: #FDFD96; /* Soft yellow */
-            padding: 1rem;
-            border-radius: 6px;
-            margin-bottom: 1.5rem;
-            border-left: 5px solid #FFCC00; /* Golden accent */
-        }
-
-        .highlight h2 {
-            font-size: 1.5rem;
-            color: #6C757D; /* Matches the header */
-            margin-bottom: 0.5rem;
+        section {
+            margin-bottom: 2rem;
         }
 
         .links ul {
@@ -59,80 +49,85 @@
         }
 
         .links ul li a {
-            color: #007BFF; /* Bright blue for links */
-            font-weight: 500;
+            color: #007BFF; /* כחול ללינקים */
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .links ul li a:hover {
-            color: #0056B3; /* Darker blue on hover */
+            color: #0056B3; /* כחול כהה בלחיצה */
         }
 
-        .btn {
+        .documents ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .documents ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .documents ul li a {
             display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            background-color: #28A745; /* Green button */
+            padding: 0.5rem 1rem;
+            background-color: #28A745; /* ירוק */
             color: white;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 5px;
             text-decoration: none;
-            text-align: center;
+            border-radius: 5px;
+            font-size: 0.9rem;
             transition: background-color 0.3s;
         }
 
-        .btn:hover {
-            background-color: #218838; /* Darker green */
+        .documents ul li a:hover {
+            background-color: #218838; /* ירוק כהה בלחיצה */
         }
 
         footer {
-            margin-top: 2rem;
             text-align: center;
             padding: 1.5rem 0;
-            background-color: #6C757D; /* Matches the header */
-            color: #FFFFFF; /* White text */
-        }
-
-        footer p {
+            background-color: #343A40; /* אפור כהה */
+            color: white;
             font-size: 0.9rem;
-            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>ברוכים הבאים לאתר של שמבור</h1>
-        <p>תוכניות בניה ודרכי פעולה</p>
+        <h1>פורטל מידע</h1>
+        <p>כל המידע שחשוב לך במקום אחד</p>
     </header>
 
     <main class="container">
-        <!-- What's New Section -->
-        <section class="highlight">
+        <!-- קישורים לאתרים ושירותים -->
+        <section class="links">
+            <h2>קישורים חשובים</h2>
+            <ul>
+                <li><a href="https://example.com/service1" target="_blank">שירות רישום עירוני</a></li>
+                <li><a href="https://example.com/service2" target="_blank">אתר המועצה לתכנון ובניה</a></li>
+            </ul>
+        </section>
+
+        <!-- מסמכים לקריאה ולהורדה -->
+        <section class="documents">
+            <h2>מסמכים לקריאה ולהורדה</h2>
+            <ul>
+                <li><a href="https://example.com/document1.pdf" target="_blank">תוכנית חפ-2666</a></li>
+                <li><a href="https://example.com/document2.pdf" target="_blank">מדיניות עירונית 2025</a></li>
+                <li><a href="https://example.com/document3.pdf" target="_blank">מידע על תוכנית תמ"א 38</a></li>
+            </ul>
+        </section>
+
+        <!-- אזור מה חדש -->
+        <section class="updates">
             <h2>מה חדש?</h2>
             <p>עדכון: תוכנית חפ-2666 נמצאת בדיון ותוצאות הדיון צפויות להתפרסם בקרוב.</p>
             <p>שימו לב: פורסמה מדיניות עירונית חדשה לתכנון שטחים פתוחים.</p>
         </section>
-
-        <!-- Important Links Section -->
-        <section class="links">
-            <h2>לינקים חשובים</h2>
-            <ul>
-                <li><a href="https://example.com/link1" target="_blank">מדיניות עירונית חיפה</a></li>
-                <li><a href="https://example.com/link2" target="_blank">תוכניות מתאר ארציות</a></li>
-                <li><a href="https://example.com/link3" target="_blank">מידע על תמ"א 38</a></li>
-            </ul>
-        </section>
-
-        <!-- Formal Documents Button -->
-        <section>
-            <a class="btn" href="planning.html">לחץ כאן למסמכים פורמליים</a>
-        </section>
     </main>
 
     <footer>
-        <p>כל הזכויות שמורות &copy; 2025 - שמבור</p>
+        <p>כל הזכויות שמורות &copy; 2025 - פורטל מידע</p>
     </footer>
 </body>
 </html>
